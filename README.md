@@ -21,4 +21,4 @@
 
 *车牌识别 
 
-![](./lijie/c++版本/result.jpg)
+![](./lijie/c++版本/resyult.jpg)
