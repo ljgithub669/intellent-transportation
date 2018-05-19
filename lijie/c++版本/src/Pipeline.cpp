@@ -2,7 +2,7 @@
 // Created by 庾金科 on 23/10/2017.
 //
 
-#include "Pipeline.h"
+#include "../include/Pipeline.h"
 
 
 namespace pr {

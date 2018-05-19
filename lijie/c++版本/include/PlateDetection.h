@@ -6,7 +6,8 @@
 #define SWIFTPR_PLATEDETECTION_H
 
 #include <opencv2/opencv.hpp>
-#include <PlateInfo.h>
+//#include <../include/PlateInfo.h>
+#include "../include/PlateInfo.h"
 #include <vector>
 namespace pr{
     class PlateDetection{
