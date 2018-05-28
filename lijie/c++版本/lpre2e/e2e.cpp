@@ -69,70 +69,10 @@ void TEST_ACC() {
         cout << "Í¼Æ¬Ãû£º" << imagename << endl;
         cv::Mat image = cv::imread(imgpath);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //		cv::imshow("image", image);
+        
+		
+		
+		//		cv::imshow("image", image);
         //		cv::waitKey(0);
 
         std::vector<pr::PlateInfo> res = prc.RunPiplineAsImage(image, pr::SEGMENTATION_FREE_METHOD);
@@ -302,7 +242,6 @@ void TEST_PIPELINE(char* pszImagePath, int default_width)
 
 	system("pause");
     cv::waitKey(0);
-
 }
 
 
@@ -388,6 +327,4 @@ int main(int argc, char** argv)
     TEST_PIPELINE(argv[1], default_width);
 	system("pause");
     return 0;
-
-
 }
