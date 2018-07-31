@@ -2,7 +2,9 @@
 #include<opencv2/opencv.hpp>
 #include <algorithm>
 #include <functional>
-// <opencv2/usingopencv.h>
+#include "../include/Pipeline.h"
+#include "WatchTimer.h"
+
 
 #define DEFAULT_DISPLAY_WIDTH (800)
 #define DEFAULT_DISPLAT_HEIGHT (600)
@@ -11,8 +13,6 @@
 // #pragma comment(lib,"opencv_world341d.lib")
 // #endif
 
-#include "../include/Pipeline.h"
-#include "WatchTimer.h"
 
 std::vector<std::string> CH_PLATE_CODE{ "京", "沪", "津", "渝", "冀", "晋", "蒙", "辽", "吉", "黑", "苏", "浙", "皖", "闽", "赣", "鲁", "豫", "鄂", "湘", "粤", "桂",
                                        "琼", "川", "贵", "云", "藏", "陕", "甘", "青", "宁", "新", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A",
@@ -44,6 +44,7 @@ bool compare(const pr::PlateInfo & m1, const pr::PlateInfo & m2) {
     return m1.confidence > m2.confidence;
 }
 
+////转化为文本的图片
 void TEST_ACC() {
 
     pr::PipelinePR prc("model/cascade.xml",
@@ -126,9 +127,10 @@ void TEST_ACC() {
 
 }
 
-
+////图片测试
 void TEST_PIPELINE(char* pszImagePath, int default_width)
 {
+	////判断输入路径是否为空
     if (pszImagePath == NULL)
     {
         std::cout << "NULL plate image!" << std::endl;
@@ -136,7 +138,6 @@ void TEST_PIPELINE(char* pszImagePath, int default_width)
     }
 
     struct _stat fileStat;
-
     int ret = _stat(pszImagePath, &fileStat);
     if (ret != 0) //文件不存在
     {
@@ -144,6 +145,7 @@ void TEST_PIPELINE(char* pszImagePath, int default_width)
         return;
     }
 
+	////载入模型
     pr::PipelinePR prc(
         "model/cascade.xml",
         "model/HorizonalFinemapping.prototxt",
@@ -157,24 +159,26 @@ void TEST_PIPELINE(char* pszImagePath, int default_width)
     );
 
     std::cout << "Processing " << pszImagePath << std::endl;
-
+	////命令行读取图片
     cv::Mat image = cv::imread(pszImagePath);
-
+	
+	////输出图片尺寸
     std::cout << "Source Image size (w*h): " << image.cols << " * " << image.rows << std::endl;
-
+	////
     cv::Mat image2;
     bool bScaled = false;
-    if (image.cols > image.rows) //w>h
+    if (image.cols > image.rows) //w>h 列大于行
     {
-        if (image.cols > DEFAULT_DISPLAY_WIDTH)
+        if (image.cols > DEFAULT_DISPLAY_WIDTH)////800
         {
+			////更改图片尺寸
             cv::resize(image, image2, cv::Size(DEFAULT_DISPLAY_WIDTH, image.rows * DEFAULT_DISPLAY_WIDTH / image.cols), cv::INTER_LINEAR);
             bScaled = true;
         }
     }
     else
     {
-        if (image.rows > DEFAULT_DISPLAT_HEIGHT)
+        if (image.rows > DEFAULT_DISPLAT_HEIGHT)////600
         {
             cv::resize(image, image2, cv::Size(image.cols * DEFAULT_DISPLAT_HEIGHT / image.rows, DEFAULT_DISPLAT_HEIGHT), cv::INTER_LINEAR);
             bScaled = true;
@@ -194,7 +198,6 @@ void TEST_PIPELINE(char* pszImagePath, int default_width)
             if (image.rows > default_width)
                 cv::resize(image, image, cv::Size(image.cols * default_width / image.rows, default_width), cv::INTER_LINEAR);
         }
-
         std::cout << "Scaled image size (w*h): " << image.cols << " * " << image.rows << std::endl;
     }
 
@@ -234,17 +237,24 @@ void TEST_PIPELINE(char* pszImagePath, int default_width)
 			cv::rectangle(image, cv::Point(region.x, region.y), cv::Point(region.x + region.width, region.y + region.height), cv::Scalar(255, 255, 0), 2);
 		}
 	}
-
+	cv::imshow("picture", image);
+	cvWaitKey(0);
+	//cv::imshow("image", image);
+	//cv::waitKey(500);
+	//cv::imshow("lijie", image);
+	/**
+	////原始图片显示
     if (bScaled)
-        cv::imshow("image", image2);
+        cv::imshow("image", image);
     else
         cv::imshow("image", image);
-
+	
 	system("pause");
-    cv::waitKey(0);
+    cvWaitKey(0);
+	*/
 }
 
-
+////视频测试
 void TEST_CAM(char* pszImagePath)
 {
     if (pszImagePath == NULL)
@@ -305,7 +315,7 @@ void TEST_CAM(char* pszImagePath)
         }
 
         cv::imshow("image", frame);
-        cv::waitKey(0);
+		cvWaitKey(0);
 
     }
 }
@@ -325,6 +335,7 @@ int main(int argc, char** argv)
         default_width = atoi(argv[2]);
 
     TEST_PIPELINE(argv[1], default_width);
+	//TEST_CAM(char *pszImagePath)   //视频
 	system("pause");
     return 0;
 }
