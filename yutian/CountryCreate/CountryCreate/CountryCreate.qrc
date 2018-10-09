@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/CountryCreate">
+        <file>Icon/software.ico</file>
+    </qresource>
+</RCC>
