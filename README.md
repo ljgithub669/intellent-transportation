@@ -51,7 +51,7 @@
 
 ### 3. 软件界面
 
-![初步界面](./Res/surface.png)
+![初步界面](http://ww1.sinaimg.cn/large/006YKa8tly1g4kb4p3py9g30sr0g47wq.gif)
 
 ## 🐳还需要做的事
 ---
