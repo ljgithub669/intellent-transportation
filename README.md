@@ -28,7 +28,7 @@
 
 ### 1. 车牌识别 
 
-![](./lijie/c++版本/resyult.jpg)
+![](http://ww1.sinaimg.cn/large/006YKa8tly1g4kbnydq0nj31jf0u0mze.jpg)
 #### 可识别和待支持的车牌的类型
 
 - [x] 单行蓝牌
@@ -47,7 +47,7 @@
 
 ### 2. 车辆检测
 
-![拍摄于西安电子商城天桥](./Res/cars.gif)
+![拍摄于西安电子商城天桥](http://ww1.sinaimg.cn/large/006YKa8tly1g4kbmr9oklj30gb0fmk2e.jpg)
 
 ### 3. 软件界面
 
