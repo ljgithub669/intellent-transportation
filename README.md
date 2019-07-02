@@ -28,7 +28,7 @@
 
 ### 1. 车牌识别 
 
-![](http://ww1.sinaimg.cn/large/006YKa8tly1g4kbnydq0nj31jf0u0mze.jpg)
+![](http://ww1.sinaimg.cn/large/006YKa8tly1g4lqwky1dsj311y0kgaun.jpg)
 #### 可识别和待支持的车牌的类型
 
 - [x] 单行蓝牌
