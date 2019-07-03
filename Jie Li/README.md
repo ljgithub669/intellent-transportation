@@ -6,3 +6,7 @@
 ![](http://ww1.sinaimg.cn/large/006YKa8tly1g4mshx1rprj30v70g1n53.jpg)
 运行GIF
 ![](http://ww1.sinaimg.cn/large/006YKa8tly1g4lqwkti1qg30zv0j7dtj.gif)
+
+-------------------------------------------------------------------
+以上为静态图片识别，下面为视频识别，速度比较慢，因为要将视频处理成每一帧图片进行识别，经测试，1s的视频需要大约22s才能识别完毕
+![](http://ww1.sinaimg.cn/large/006YKa8tly1g4mxgxj8trg30w90e6e83.gif)
