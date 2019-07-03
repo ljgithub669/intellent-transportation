@@ -67,7 +67,8 @@
 如今已完成基本功能，测试尚可，其他信息稍后补充
 
 **硬件连接**
-![]([IMG]http://ww1.sinaimg.cn/large/006YKa8tly1g4mlr7k4hkj30zk0qogxk.jpg[/IMG])
+
+![](http://ww1.sinaimg.cn/large/006YKa8tly1g4mlr7k4hkj30zk0qogxk.jpg)
 
 **结果展示**
 ![](http://ww1.sinaimg.cn/large/006YKa8tly1g4kbb8wncag30tn0fjaig.gif)
