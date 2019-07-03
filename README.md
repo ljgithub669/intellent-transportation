@@ -67,7 +67,7 @@
 如今已完成基本功能，测试尚可，其他信息稍后补充
 
 **硬件连接**
-![](https://github.com/ljgithub669/intellent-transportation/blob/master/Res/%E7%A1%AC%E4%BB%B6%E8%BF%9E%E6%8E%A5%20(3).jpg)
+![]([IMG]http://ww1.sinaimg.cn/large/006YKa8tly1g4mlr7k4hkj30zk0qogxk.jpg[/IMG])
 
 **结果展示**
 ![](http://ww1.sinaimg.cn/large/006YKa8tly1g4kbb8wncag30tn0fjaig.gif)
