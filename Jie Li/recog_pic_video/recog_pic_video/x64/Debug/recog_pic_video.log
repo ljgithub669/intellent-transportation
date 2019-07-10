@@ -1,0 +1,31 @@
+﻿生成启动时间为 2019/7/3 12:21:14。
+     1>项目“C:\Users\lijie\Desktop\新建文件夹\recog_pic_video\recog_pic_video\recog_pic_video.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt ..\src\main.cpp
+         main.cpp
+     1>c:\users\lijie\desktop\新建文件夹\recog_pic_video\include\pipeline.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\lijie\desktop\新建文件夹\recog_pic_video\include\platedetection.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\lijie\desktop\新建文件夹\recog_pic_video\include\plateinfo.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\lijie\desktop\新建文件夹\recog_pic_video\include\platesegmentation.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\lijie\desktop\新建文件夹\recog_pic_video\include\cnnrecognizer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\lijie\desktop\新建文件夹\recog_pic_video\include\recognizer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\lijie\desktop\新建文件夹\recog_pic_video\include\fastdeskew.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\lijie\desktop\新建文件夹\recog_pic_video\include\finemapping.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\lijie\desktop\新建文件夹\recog_pic_video\include\segmentationfreerecognizer.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lijie\Desktop\新建文件夹\recog_pic_video\x64\Debug\recog_pic_video.exe" /INCREMENTAL /NOLOGO opencv_world340d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\lijie\Desktop\新建文件夹\recog_pic_video\x64\Debug\recog_pic_video.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\lijie\Desktop\新建文件夹\recog_pic_video\x64\Debug\recog_pic_video.lib" /MACHINE:X64 x64\Debug\CNNRecognizer.obj
+         x64\Debug\FastDeskew.obj
+         x64\Debug\FineMapping.obj
+         x64\Debug\main.obj
+         x64\Debug\Pipeline.obj
+         x64\Debug\PlateDetection.obj
+         x64\Debug\PlateSegmentation.obj
+         x64\Debug\putText.obj
+         x64\Debug\Recognizer.obj
+         x64\Debug\SegmentationFreeRecognizer.obj
+         recog_pic_video.vcxproj -> C:\Users\lijie\Desktop\新建文件夹\recog_pic_video\x64\Debug\recog_pic_video.exe
+     1>已完成生成项目“C:\Users\lijie\Desktop\新建文件夹\recog_pic_video\recog_pic_video\recog_pic_video.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+已用时间 00:00:06.84
