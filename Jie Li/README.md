@@ -10,4 +10,4 @@
 -------------------------------------------------------------------
 以上为静态图片识别，下面为视频识别，速度比较慢，因为要将视频处理成每一帧图片进行识别，经测试，1s的视频需要大约22s才能识别完毕
 
-![](http://ww1.sinaimg.cn/large/006YKa8tly1g4mxgxj8trg30w90e6e83.gif)
+![](https://github.com/ljgithub669/intellent-transportation/blob/master/Jie%20Li/recog_pic_video/recog.gif)
