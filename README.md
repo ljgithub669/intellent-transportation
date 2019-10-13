@@ -28,7 +28,6 @@
 
 ### 1. [车牌识别](https://github.com/ljgithub669/intellent-transportation/tree/master/Jie%20Li)
 
-![识别视频.gif](http://ww1.sinaimg.cn/large/006YKa8tly1g7wwzvhcjwg305k02l160.gif)
 
 ![](http://ww1.sinaimg.cn/large/006YKa8tly1g4lqwky1dsj311y0kgaun.jpg)
 #### 可识别和待支持的车牌的类型
